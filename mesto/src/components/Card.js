@@ -6,11 +6,6 @@ function Card(props) {
         props.onCardClick(props.card);
     }
 
-    // const onDelete = () => {
-    //     props.onDelete();
-    //   }
-
-
     function handleDeleteClick() {
         props.onDelete();
     }
