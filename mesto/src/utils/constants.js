@@ -1,4 +1,3 @@
-// export const popupElement = document.querySelector('.popup');
 export const popupElement = document.querySelector('.popup');
 //popups
 export const popupEditProfile = '.popup_type_edit';
@@ -7,16 +6,8 @@ export const popupImage = '.popup-place';
 export const popupDeleteCard = '.popup-delete';
 export const popupChangeAvatar = '.popup_type_avatar';
 
-
-//export const popupEditProfile = document.querySelector('.popup_type_edit');
-//export const popupAddElement = document.querySelector('.popup_type_add');
-
-
 export const popupOpenButtonElement = document.querySelector('.profile__edit-button');
 export const placeAddButtonElement = document.querySelector('.profile__add-button');
-
-
-
 
 export const popupCloseButtonElement = popupElement.querySelector('.popup__close');
 export const popupCloseAddElement = document.querySelector(popupAddElement).querySelector('.popup__close');
@@ -39,7 +30,6 @@ export const formAvatar = document.querySelector('.popup__form_type_avatar');
 
 export const profileAvatarButton = document.querySelector('.profile__avatar-button');
 export const popupDeleteButton = document.querySelector('.popup-delete__submit-button');
-
 
 export const config = {
   formSelector: '.popup__form',
