@@ -40,9 +40,9 @@ function Main(props) {
       {/* <!-- профайл --> */}
       <section className="profile">
         <div className="profile__avatar-plus-info">
-          <div className="profile__avatar-container">
+          <div className="profile__avatar-container" onClick={onEditAvatar}>
             <img src={userAvatar} alt="Аватар" className="profile__avatar" style={{ backgroundImage: `url(${userAvatar})` }} />
-            <button onClick={onEditAvatar} type="button" aria-label="Обновить аватар" title="Обновить аватар" className="profile__avatar-button"></button>
+            <button type="button" aria-label="Обновить аватар" title="Обновить аватар" className="profile__avatar-button"></button>
           </div>
           <div className="profile__info">
             <div className="profile__button-plus-name">
