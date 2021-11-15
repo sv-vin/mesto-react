@@ -1,4 +1,4 @@
- class Api {
+class Api {
 
   constructor({ url, headers }) {
     this._url = url
@@ -58,18 +58,12 @@
     }).then(this._checkAnswer)
   }
 
-  awaylikeCard(id) {
-    return fetch(`${this._url}/cards/likes/${id}`, {
-      method: 'DELETE',
-      headers: this._headers
-    }).then(this._checkAnswer)
-  }
-
-  likeCard(id) {
-    return fetch(`${this._url}/cards/likes/${id}`, {
-      method: 'PUT',
-      headers: this._headers
-    }).then(this._checkAnswer)
+  //Лайки
+  changeLikeCardStatus(cardId, isLiked) {
+    return fetch(`${this._url}/cards/likes/${cardId}`, {
+      method: isLiked ? "PUT" : "DELETE",
+      headers: this._headers,
+    }).then(this._checkAnswer);
   }
 
   _checkAnswer(res) {
@@ -79,7 +73,7 @@
     return res.json()
   }
 
- 
+
 }
 
 const api = new Api({
@@ -92,4 +86,3 @@ const api = new Api({
 
 
 export default api
-
